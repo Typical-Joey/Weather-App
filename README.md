@@ -1,3 +1,3 @@
 # Weather-App
 
-<img src="/images/screenshot 1.png" />
+<img src="/images/Screenshot 1.png" />
