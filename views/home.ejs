@@ -1,0 +1,22 @@
+<%- include("partials/header") %>
+<!-- Search bar -->
+<div class="search">
+  <h1>What city would you like to search?</h1>
+  <p class="error"><%=errorMsg%></h2>
+  <form action="/" method="post">
+    <input type="text" name="cityName" placeholder="Search by city" />
+    <button type="submit" class="btn btn-outline-primary">Search</button>
+  </form>
+</div>
+
+<!-- Shows the cities information -->
+<% cities.forEach(city => { %>
+<div class="city-container">
+  <h1><%= city.name %></h1>
+  <div class="city-content">
+    <h2>Weather: <%= city.weather %></h2>
+    <h2>Temperature: <%= city.temp %></h2>
+  </div>
+    <img src=<%=city.icon %> alt="Weather icon">
+</div>
+<% }) %> <%- include("partials/footer") %>
