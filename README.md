@@ -17,7 +17,7 @@
   <li>Open your internet browser and got to "localhost:3000"</li>
 </ol>
 
-<p style="color: red;"><em>If you get an error when starting the server close it "CTRL + C" and run "npm i body-parser" and then re-run the server.</em></p>
+<p><em><font color="red">If you get an error when starting the server close it "CTRL + C" and run "npm i body-parser" and then re-run the server.</font></em></p>
 
 <h1>You should be greeted with this screen</h1>
 <img src="/images/Screenshot 4.png">
