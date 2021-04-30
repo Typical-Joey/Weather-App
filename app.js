@@ -62,14 +62,18 @@ app.post("/", function (req, res) {
         var description = weatherData.weather[0].description;
         const iconID = weatherData.weather[0].icon;
         const icon = "https://openweathermap.org/img/wn/" + iconID + "@2x.png";
+        const date = new Date();
+        const time = `${date.getMonth()}/${date.getDay()}/${date.getFullYear()} at ${date.getHours()}:${date.getMinutes()}`;
 
         const city = {
           name: _.startCase(_.toLower(cityName)),
           weather: description,
           temp: temp + "°",
           icon: icon,
+          time: time,
         };
 
+        // Checking to see if city is already being shown
         if (isUsed(cities, city)) {
           errorMsg = "City Exists";
         } else {
@@ -77,6 +81,7 @@ app.post("/", function (req, res) {
           errorMsg = "";
         }
       } catch (err) {
+        // Checking to see if a valid city was entered or if something else went wrong
         errorMsg =
           "Something went wrong! Please make sure you entered a valid city.";
       } finally {

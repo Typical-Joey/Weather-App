@@ -13,6 +13,7 @@
 <% cities.forEach(city => { %>
 <div class="city-container">
   <h1><%= city.name %></h1>
+  <p>As of <%= city.time %></p>
   <div class="city-content">
     <h2>Weather: <%= city.weather %></h2>
     <h2>Temperature: <%= city.temp %></h2>
