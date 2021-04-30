@@ -20,15 +20,15 @@
 <p><em>If you get an error when starting the server close it "CTRL + C" and run "npm i body-parser" and then re-run the server.</em></p>
 
 <h1>You should be greeted with this screen</h1>
-<img src="/images/Screenshot 4.png">
+<img src="/images/Screenshot 1.png">
 
 <h1>Searching</h1>
-<img src="/images/Screenshot 1.png">
+<img src="/images/Screenshot 2.png">
 <p>You can type any city in the world into the search bar and it will display automatically in the DOM.</p>
 
 <h1>Input Validation</h1>
-<img src="/images/Screenshot 2.png">
 <img src="/images/Screenshot 3.png">
+<img src="/images/Screenshot 4.png">
 <p>The website will ensure you enter a valid website that is not already displayed.</p>
 
 <h1>Local Storage</h1>
